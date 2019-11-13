@@ -181,7 +181,7 @@ function check_cell() {
     if (check_game_over()) {
         turn_field_off();
        // window.alert('Вы победили :3');
-        window.alert('!!!САНЯ - ПИДР!!!');
+        window.alert('Вы победили!');
         window.alert('Обновите страницу для новой игры');
     }
 }
