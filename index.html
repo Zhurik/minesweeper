@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Сапер</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="actions.js"></script>
+    </head>
+    <body>
+        <h1>Minesweeper</h1>
+        <noscript>
+            Извините, но без включенного JavaScript ничего работать не будет(((
+        </noscript>
+        <div id="flags-window">
+            Флагов осталось: 
+            <div id="flags">
+                0
+            </div>
+        </div>
+        <div id="new-table">
+        </div>
+        <form id="settings">
+            <div class="difficulty">
+                <input type="radio" name="diff" value="easy" onclick="change_settings();">
+                Новичок - Поле 9х9 (10 бомб)<br>
+                <input type="radio" name="diff" value="norm" onclick="change_settings();">
+                Любитель - Поле 16х16 (40 бомб)<br>
+                <input type="radio" name="diff" value="hard" onclick="change_settings();">
+                Профессионал - Поле 16х30 (99 бомб)<br>
+                <input type="radio" name="diff" value="custom" onclick="change_settings();">
+                Свои правила
+            </div>
+            <div class="settings">
+                Число рядов<br>
+                <input id="rows" disabled><br>
+                Число столбцов<br>
+                <input id="cols" disabled><br>
+                Число бомб<br>
+                <input id="bombs" disabled><br>
+                <button id="start" onclick="start_game();">
+                    Начать игру
+                </button>
+            </div>
+        </form>
+        <div class="rules">
+            Добро пожаловать в сапер :3<br>
+            Левой кнопкой мыши очищаем поле, правой кнопкой мыши ставим флаги
+        </div>
+        <script type="text/javascript">
+            check_browser();
+        </script>
+    </body>
+</html>
