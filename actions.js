@@ -149,8 +149,7 @@ function check_cell() {
     if (this.innerHTML == 'B') {
         draw_bombs();
         turn_field_off();
-       // window.alert('Игра окончена!');
-        window.alert('!!!САНЯ - ПРИЁМНЫЙ!!!');
+        window.alert('Игра окончена!');
         window.alert('Страница будет перезагружена через 5 секунд');
         window.setTimeout(function() {location.reload();}, 5000);
     }
